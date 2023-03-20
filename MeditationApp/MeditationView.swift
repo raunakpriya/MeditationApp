@@ -7,6 +7,7 @@ import SwiftUI
 
 struct MeditationView: View {
     
+    @StateObject var meditationVM: MeditationViewModel
     @State private var showPlayer = false
     
     var body: some View {
@@ -14,7 +15,7 @@ struct MeditationView: View {
             
             // MARK: Image
             
-            Image("image-stones")
+            Image(meditationVM.mediatation.image)
                 .resizable()
                 .scaledToFill()
                 .frame(height: UIScreen.main.bounds.height / 3)
@@ -29,13 +30,14 @@ struct MeditationView: View {
                     VStack(alignment: .leading, spacing: 24) {
                         Text("Music")
                         
-                        Text("0sec")
+                        Text(DateComponentsFormatter.abbreviated.string(from: meditationVM.mediatation.duration) ??
+                            meditationVM.mediatation.duration.formatted() + "S")
                     }
                     .font(.subheadline)
                     .textCase(.uppercase)
                     .opacity(0.6)
                     
-                    Text("A minute meditaion")
+                    Text(meditationVM.mediatation.title)
                         .foregroundColor(.white)
                         .font(.title)
                     
@@ -52,7 +54,7 @@ struct MeditationView: View {
                     }
 
                     
-                    Text("Clear your mind from the clutter of the world")
+                    Text(meditationVM.mediatation.description)
                     
                     Spacer()
                     
@@ -67,13 +69,15 @@ struct MeditationView: View {
         }
         .ignoresSafeArea()
         .fullScreenCover(isPresented: $showPlayer) {
-            PlayerView()
+            PlayerView(meditationVM: meditationVM)
         }
     }
 }
 
 struct MeditationView_Previews: PreviewProvider {
+    
+    static let meditationVM = MeditationViewModel(mediatation: Meditation.data)
     static var previews: some View {
-        MeditationView()
+        MeditationView(meditationVM: meditationVM)
     }
 }
