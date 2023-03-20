@@ -2,8 +2,6 @@
 //  ContentView.swift
 //  MeditationApp
 //
-//  Created by Harsh Raj on 07/03/23.
-//
 
 import SwiftUI
 

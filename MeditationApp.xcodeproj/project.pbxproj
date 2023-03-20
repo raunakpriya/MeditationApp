@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50FAAA0E29BF458D001E2C42 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FAAA0D29BF458D001E2C42 /* PlayerView.swift */; };
+		50FAAA1029C0D232001E2C42 /* PlaybackControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FAAA0F29C0D232001E2C42 /* PlaybackControl.swift */; };
 		50FD12B529B786CC0049D2BC /* MeditationAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FD12B429B786CC0049D2BC /* MeditationAppApp.swift */; };
 		50FD12B729B786CC0049D2BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FD12B629B786CC0049D2BC /* ContentView.swift */; };
 		50FD12B929B786D40049D2BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50FD12B829B786D40049D2BC /* Assets.xcassets */; };
 		50FD12BC29B786D40049D2BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50FD12BB29B786D40049D2BC /* Preview Assets.xcassets */; };
+		50FD12C329B788B60049D2BC /* MeditationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FD12C229B788B60049D2BC /* MeditationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50FAAA0D29BF458D001E2C42 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		50FAAA0F29C0D232001E2C42 /* PlaybackControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackControl.swift; sourceTree = "<group>"; };
 		50FD12B129B786CC0049D2BC /* MeditationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeditationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50FD12B429B786CC0049D2BC /* MeditationAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationAppApp.swift; sourceTree = "<group>"; };
 		50FD12B629B786CC0049D2BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		50FD12B829B786D40049D2BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50FD12BB29B786D40049D2BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		50FD12C229B788B60049D2BC /* MeditationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,9 @@
 				50FD12B629B786CC0049D2BC /* ContentView.swift */,
 				50FD12B829B786D40049D2BC /* Assets.xcassets */,
 				50FD12BA29B786D40049D2BC /* Preview Content */,
+				50FD12C229B788B60049D2BC /* MeditationView.swift */,
+				50FAAA0D29BF458D001E2C42 /* PlayerView.swift */,
+				50FAAA0F29C0D232001E2C42 /* PlaybackControl.swift */,
 			);
 			path = MeditationApp;
 			sourceTree = "<group>";
@@ -138,7 +147,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				50FD12B729B786CC0049D2BC /* ContentView.swift in Sources */,
+				50FD12C329B788B60049D2BC /* MeditationView.swift in Sources */,
+				50FAAA1029C0D232001E2C42 /* PlaybackControl.swift in Sources */,
 				50FD12B529B786CC0049D2BC /* MeditationAppApp.swift in Sources */,
+				50FAAA0E29BF458D001E2C42 /* PlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
