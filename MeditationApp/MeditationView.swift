@@ -79,5 +79,6 @@ struct MeditationView_Previews: PreviewProvider {
     static let meditationVM = MeditationViewModel(mediatation: Meditation.data)
     static var previews: some View {
         MeditationView(meditationVM: meditationVM)
+            .environmentObject(AudioManager())
     }
 }
